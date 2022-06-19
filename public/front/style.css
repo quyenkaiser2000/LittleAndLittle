@@ -453,3 +453,191 @@ main{
     right: -6%;
     bottom: -25%;
 }
+
+/**************event****************/
+.event-area .logo .img-logo {
+    font-family: 'Lemonada', cursive;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    color: #fff;
+    margin-top: 110px;
+    text-align: center;
+    margin-bottom: 73px;
+}
+.event-area .logo .img-logo >span {
+    display: inline-flex;
+}
+.event-area .slick-initialized .slick-slide{
+    margin: 0px 14px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 45px rgb(109 46 0 / 35%);
+    border-radius: 20px;
+}
+.event-area .slick-slide img {
+    display: block;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.event-area .slick-prev{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    left: -80px;
+
+
+    position: absolute !important;
+    padding: 20px 17px !important;
+    display: flex !important;
+    background: #FFDE32 !important;
+    box-shadow: 0px 9px 0px #fdcc6b !important;
+    border-radius: 12px !important;
+    filter: drop-shadow(0px 3px 2px #DE9959) !important;
+    height: 51px;
+    width: 53px;
+}
+.event-area .slick-next{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+  right: -80px;
+
+  position: absolute !important;
+    padding: 20px 17px !important;
+    display: flex !important;
+    background: #FFDE32 !important;
+    box-shadow: 0px 9px 0px #fdcc6b !important;
+    border-radius: 12px !important;
+    filter: drop-shadow(0px 3px 2px #DE9959) !important;
+    height: 51px;
+    width: 53px;
+}
+.event-area .slick-next::before{
+    content: '';
+    border: solid #ffffff;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 5px;
+    transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+
+}
+.event-area .slick-prev::before{
+    content: '';
+
+    border: solid #ffffff;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(130deg);
+}
+
+
+.event-area .autoplay .card .card-body .card-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    align-items: center;
+
+    color: #23221F;
+}
+.event-area .autoplay .card .card-body .card-text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+    color: #6C7272;
+}
+.event-area .autoplay .card .card-body .card-text-date{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+    align-items: center;
+    color: #444444;
+
+}
+.event-area .autoplay .card .card-body .card-text-date >i{
+    color: #FFB809;
+    font-size: 24px;
+
+}
+.event-area .autoplay .card .card-body .card-text-price{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #FA7D09;
+
+
+}
+.event-area .autoplay .card .card-body .btn-detail{
+    font-family: 'Lemonada', cursive;
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    filter: drop-shadow(0px 4px 8px rgba(165, 15, 15, 0.45));
+    background: #FF000A;
+    border: none;
+    box-shadow: 0px 5px 0px #BD000B !important;
+    padding: 6px 45px;
+    border-radius: 5px;
+    margin-bottom: 32px;
+}
+
+
+.br-event{
+    background-image: url(/storage/br-sukien.png);
+    height: 900px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.flag-event-left{
+    position: absolute;
+    left: 0%;
+    top: 5%;
+}
+.flag-event-right{
+    position: absolute;
+    left: 70.5%;
+    top: 1%;
+}
