@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EVENT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
-    <link rel="stylesheet" href="front/style.css">
+    <link rel="stylesheet" href="/front/style.css">
 </head>
 <body>
 
@@ -44,9 +44,9 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarCollapse">
                             <div class="navbar-nav center">
-                                <a href="#" class="nav-item nav-link active">Trang chủ</a>
-                                <a href="#" class="nav-item nav-link">Sự kiện</a>
-                                <a href="#" class="nav-item nav-link">Liên hệ</a>
+                                <a href="/" class="nav-item nav-link ">Trang chủ</a>
+                                <a href="/event" class="nav-item nav-link active">Sự kiện</a>
+                                <a href="/contact" class="nav-item nav-link">Liên hệ</a>
                             </div>
                             <div class="navbar-nav ms-auto phone">
                                 <a href="#" class="nav-item nav-link"><i class="fa fa-solid fa-phone"></i>0123456789</a>
@@ -96,7 +96,7 @@
                                                 <p class="card-text-date"><i class="fa-solid fa-calendar-days"></i> 30/05/2021 - 01/06/2021</p>
                                                 <p class="card-text-price">25.000 VNĐ</p>
 
-                                                <a href="#" class="btn btn-primary btn-detail">Xem chi tiết</a>
+                                                <a href="/event/detail" class="btn btn-primary btn-detail">Xem chi tiết</a>
 
                                             </div>
                                         </div>
@@ -108,7 +108,7 @@
                                                 <p class="card-text-date"><i class="fa-solid fa-calendar-days"></i> 30/05/2021 - 01/06/2021</p>
                                                 <p class="card-text-price">25.000 VNĐ</p>
 
-                                                <a href="#" class="btn btn-primary btn-detail">Xem chi tiết</a>
+                                                <a href="/event/detail" class="btn btn-primary btn-detail">Xem chi tiết</a>
 
                                             </div>
                                         </div>
@@ -120,7 +120,7 @@
                                                 <p class="card-text-date"><i class="fa-solid fa-calendar-days"></i> 30/05/2021 - 01/06/2021</p>
                                                 <p class="card-text-price">25.000 VNĐ</p>
 
-                                                <a href="#" class="btn btn-primary btn-detail">Xem chi tiết</a>
+                                                <a href="/event/detail" class="btn btn-primary btn-detail">Xem chi tiết</a>
 
                                             </div>
                                         </div>
@@ -132,7 +132,7 @@
                                                 <p class="card-text-date"><i class="fa-solid fa-calendar-days"></i> 30/05/2021 - 01/06/2021</p>
                                                 <p class="card-text-price">25.000 VNĐ</p>
 
-                                                <a href="#" class="btn btn-primary btn-detail">Xem chi tiết</a>
+                                                <a href="/event/detail" class="btn btn-primary btn-detail">Xem chi tiết</a>
 
                                             </div>
                                         </div>
@@ -144,7 +144,7 @@
                                                 <p class="card-text-date"><i class="fa-solid fa-calendar-days"></i> 30/05/2021 - 01/06/2021</p>
                                                 <p class="card-text-price">25.000 VNĐ</p>
 
-                                                <a href="#" class="btn btn-primary btn-detail">Xem chi tiết</a>
+                                                <a href="/event/detail" class="btn btn-primary btn-detail">Xem chi tiết</a>
                                             </div>
                                         </div>
                                     </div>

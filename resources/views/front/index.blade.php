@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HOME</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
 
   
-    <link rel="stylesheet" href="front/style.css">
+    <link rel="stylesheet" href="/front/style.css">
 </head>
 <body>
 
@@ -40,9 +40,9 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarCollapse">
                             <div class="navbar-nav center">
-                                <a href="#" class="nav-item nav-link active">Trang chủ</a>
-                                <a href="#" class="nav-item nav-link">Sự kiện</a>
-                                <a href="#" class="nav-item nav-link">Liên hệ</a>
+                                <a href="/" class="nav-item nav-link active">Trang chủ</a>
+                                <a href="/event" class="nav-item nav-link">Sự kiện</a>
+                                <a href="/contact" class="nav-item nav-link">Liên hệ</a>
                             </div>
                             <div class="navbar-nav ms-auto phone">
                                 <a href="#" class="nav-item nav-link"><i class="fa fa-solid fa-phone"></i>0123456789</a>
