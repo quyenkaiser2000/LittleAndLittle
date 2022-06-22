@@ -139,8 +139,9 @@
                                         <div class="row padding-icon">
                                             <div class="col-lg-12">
                                                 <select class="js-example-basic-single" name="state">
-                                                <option value="AL">Alabama</option>
-                                                <option value="WY">Wyoming</option>
+                                                @foreach($events as $event)
+                                                    <option value="{{$event->id}}">{{$event->name}}</option>
+                                                @endforeach
                                                 </select>
                                             </div>
                                         </div>

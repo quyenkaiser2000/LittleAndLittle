@@ -80,7 +80,7 @@
                                 <div class="col-lg-12">
                                     <div class="logo">
                                         <h1 class="img-logo">
-                                            <span>Sự kiện 1</span>
+                                            <span>{{$event[0]->event->name}}</span>
                                         </h1>
                                     </div>
                                 </div>
@@ -92,13 +92,13 @@
                                             <div class="col-lg-4">
                                                 <div class="card-detail">
                                                     <div class="img">
-                                                        <img src="{{Storage::disk('public')->url('event-detail.png') }}" alt="">
+                                                        <img src="{{Storage::disk('public')->url($event[0]->img) }}" alt="">
                                                     </div>
                                                     <div class="text">
-                                                        <p class="card-text-date"><i class="fa-solid fa-calendar-days"></i> 30/05/2021 - 01/06/2021</p>
-                                                        <p class="card-text">Đầm sen park</p>
+                                                        <p class="card-text-date"><i class="fa-solid fa-calendar-days"></i> {{\Carbon\Carbon::Parse($event[0]->event->start_day)->format('d/m/Y')}} - {{\Carbon\Carbon::Parse($event[0]->event->end_day)->format('d/m/Y')}}</p>
+                                                        <p class="card-text">{{$event[0]->event->location}}</p>
 
-                                                        <p class="card-text-price">25.000 VNĐ</p>
+                                                        <p class="card-text-price">{{number_format($event[0]->event->price)}} VNĐ</p>
                                                     </div>
                                                 </div>
 
@@ -106,7 +106,7 @@
                                             <div class="col-lg-3">
                                                 <div class="card-detail">
                                                     <div class="text">
-                                                        <p class="card-text"> <span class="firt-text">Lorem Ipsum</span>  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic sdsd typesetting, remaining cssa essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, of Lorem Ipsum.</p>
+                                                        <p class="card-text">{{$event[0]->description}}</p>
                                                     </div>
 
                                                 </div>
@@ -114,10 +114,10 @@
                                             <div class="col-lg-3">
                                                 <div class="card-detail">
                                                     <div class="img">
-                                                        <img src="{{Storage::disk('public')->url('img-event.png') }}" alt="">
+                                                        <img src="{{Storage::disk('public')->url($event[1]->img)}}" alt="">
                                                     </div>
                                                     <div class="text">
-                                                        <p class="card-text">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, </p>
+                                                        <p class="card-text">{{$event[1]->description}}</p>
                                                     </div>
                                                 </div>
         
@@ -126,10 +126,10 @@
                                                 <div class="card-detail">
                                                     
                                                     <div class="text">
-                                                        <p class="card-text">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, </p>
+                                                        <p class="card-text">{{$event[2]->description}}</p>
                                                     </div>
                                                     <div class="img">
-                                                        <img src="{{Storage::disk('public')->url('img-event.png') }}" alt="">
+                                                        <img src="{{Storage::disk('public')->url($event[2]->img) }}" alt="">
                                                     </div>
                                                 </div>
         

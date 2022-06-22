@@ -88,65 +88,23 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="autoplay">
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="{{Storage::disk('public')->url('img-event.png') }}" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Sự kiện 1</h5>
-                                                <p class="card-text">Đầm sen park</p>
-                                                <p class="card-text-date"><i class="fa-solid fa-calendar-days"></i> 30/05/2021 - 01/06/2021</p>
-                                                <p class="card-text-price">25.000 VNĐ</p>
+                                        @foreach($events as $event)
+                                            <div class="card" style="width: 18rem;">
+                                                <img src="{{Storage::disk('public')->url($event->eventDetail[0]->img) }}" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">{{$event->name}}</h5>
+                                                    <p class="card-text">{{$event->location}}</p>
+                                                    <p class="card-text-date"><i class="fa-solid fa-calendar-days"></i>  {{\Carbon\Carbon::Parse($event->start_day)->format('d/m/Y')}} - {{\Carbon\Carbon::Parse($event->end_day)->format('d/m/Y')}}</p>
+                                                    <p class="card-text-price">{{number_format($event->price)}} VNĐ</p>
 
-                                                <a href="/event/detail" class="btn btn-primary btn-detail">Xem chi tiết</a>
+                                                    <a href="{{'event/'.$event->id}}" class="btn btn-primary btn-detail">Xem chi tiết</a>
 
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="{{Storage::disk('public')->url('img-event.png') }}" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Sự kiện 2</h5>
-                                                <p class="card-text">Đầm sen park</p>
-                                                <p class="card-text-date"><i class="fa-solid fa-calendar-days"></i> 30/05/2021 - 01/06/2021</p>
-                                                <p class="card-text-price">25.000 VNĐ</p>
+                                        @endforeach
 
-                                                <a href="/event/detail" class="btn btn-primary btn-detail">Xem chi tiết</a>
-
-                                            </div>
-                                        </div>
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="{{Storage::disk('public')->url('img-event.png') }}" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Sự kiện 3</h5>
-                                                <p class="card-text">Đầm sen park</p>
-                                                <p class="card-text-date"><i class="fa-solid fa-calendar-days"></i> 30/05/2021 - 01/06/2021</p>
-                                                <p class="card-text-price">25.000 VNĐ</p>
-
-                                                <a href="/event/detail" class="btn btn-primary btn-detail">Xem chi tiết</a>
-
-                                            </div>
-                                        </div>
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="{{Storage::disk('public')->url('img-event.png') }}" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Sự kiện 4</h5>
-                                                <p class="card-text">Đầm sen park</p>
-                                                <p class="card-text-date"><i class="fa-solid fa-calendar-days"></i> 30/05/2021 - 01/06/2021</p>
-                                                <p class="card-text-price">25.000 VNĐ</p>
-
-                                                <a href="/event/detail" class="btn btn-primary btn-detail">Xem chi tiết</a>
-
-                                            </div>
-                                        </div>
-                                        <div class="card" style="width: 18rem;">
-                                            <img src="{{Storage::disk('public')->url('img-event.png') }}" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Sự kiện 4</h5>
-                                                <p class="card-text">Đầm sen park</p>
-                                                <p class="card-text-date"><i class="fa-solid fa-calendar-days"></i> 30/05/2021 - 01/06/2021</p>
-                                                <p class="card-text-price">25.000 VNĐ</p>
-
-                                                <a href="/event/detail" class="btn btn-primary btn-detail">Xem chi tiết</a>
-                                            </div>
-                                        </div>
+                                        
+                                        
                                     </div>
                                 </div>
                             </div>

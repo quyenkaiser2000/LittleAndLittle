@@ -13,18 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('front.index');
-});
-Route::get('/event', function () {
-    return view('front.event');
-});
-Route::get('/event/detail', function () {
-    return view('front.event_detail');
-});
-Route::get('/contact', function () {
-    return view('front.contact');
-});
+Route::get('/',[App\Http\Controllers\HomeController::class,'index'])->name('home');
+
+
+Route::get('/event',[App\Http\Controllers\EventController::class,'index'])->name('event');
+Route::get('/event/{id}',[App\Http\Controllers\EventController::class,'detail'])->name('detail-event');
+
+
+Route::get('/contact',[App\Http\Controllers\ContactController::class,'index'])->name('contact');
+Route::post('/contact',[App\Http\Controllers\ContactController::class,'sendmail'])->name('sendmail');
+
+
 Route::get('/checkout', function () {
     return view('front.check-out');
 });

@@ -21,6 +21,7 @@
     
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://unpkg.com/sweetalert2@7.18.0/dist/sweetalert2.all.js"></script>
 
   
     <link rel="stylesheet" href="/front/style.css">
@@ -82,33 +83,34 @@
                                 
                                 <div class="border-padding">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac mollis justo. Etiam volutpat tellus quis risus volutpat, ut posuere ex facilisis. </p>
-                                        <form action="#">
-                                            <div class="row">
-                                                <div class="col-lg-5">
-                                                    <input type="text" class="form-control" id="name" name="name" placeholder="Tên" required>
+                                        <form action="{{ route('sendmail') }}" method="POST">
+                                            @csrf
+                                                <div class="row">
+                                                    <div class="col-lg-5">
+                                                        <input type="text" class="form-control" id="name" name="name" placeholder="Tên" required>
+                                                    </div>
+                                                    <div class="col-lg-7">
+                                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                                    </div>
                                                 </div>
-                                                <div class="col-lg-7">
-                                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                                <div class="row">
+                                                    <div class="col-lg-5">
+                                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Số điện thoại" required>
+                                                    </div>
+                                                    <div class="col-lg-7">
+                                                        <input type="text" class="form-control" id="address" name="address" placeholder="Địa chỉ" required>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-5">
-                                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Số điện thoại" required>
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <textarea name="message" id="message" placeholder="Lời nhắn"></textarea>
+                                                    </div>
                                                 </div>
-                                                <div class="col-lg-7">
-                                                    <input type="text" class="form-control" id="address" name="address" placeholder="Địa chỉ" required>
+                                                <div class="row button">
+                                                    <div class="col-lg-12" style="text-align: center;">
+                                                        <button type="submit">Gửi liên hệ</button>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <textarea name="mes" id="mes" placeholder="Lời nhắn"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="row button">
-                                                <div class="col-lg-12" style="text-align: center;">
-                                                    <button type="submit">Gửi liên hệ</button>
-                                                </div>
-                                            </div>
                                         </form>
                                 </div>
                             </div>
