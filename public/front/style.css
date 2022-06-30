@@ -159,7 +159,7 @@ main{
 .logo-area .form form div .icondate{
     position: absolute !important;
     top: 19% !important;
-    right: -10% !important;
+    right: 5% !important;
     padding: 20px 19px !important;
     display: flex !important;
     background: #FFDE32 !important;
@@ -930,6 +930,7 @@ main{
     position: relative;
     margin-left: 33px;
     box-shadow: 0px 15px 0px #FFCA7B!important;
+    
 }
 .checkout-area .padding .mid{
     position: absolute;
@@ -958,6 +959,7 @@ main{
     border: 3px dashed #FFB489;
     border-radius: 30px;
     background: #FFF6D4;
+    padding-bottom: 125px;
 }
 .checkout-area  form .padding .border-padding div .cvv{
     max-width: 113px;
@@ -1338,4 +1340,24 @@ margin: auto;
     margin-top: 36px;
     margin-left: 15px;
     margin-bottom: -20px;
+}
+.checkout-area .submit-thanhtoan{
+    font-family: 'Lemonada', cursive;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+    padding: 10px 90px;
+    background: #FF000A;
+    border: none;
+    filter: drop-shadow(0px 4px 8px rgba(165, 15, 15, 0.45));
+    box-shadow: 0px 9px 0px #bd000b !important;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.checkout-area .button-thanhtoan{
+    position: absolute;
+    bottom: 50px;
+    right: 155px;
 }

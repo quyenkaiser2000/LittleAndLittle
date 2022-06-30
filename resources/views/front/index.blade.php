@@ -135,7 +135,8 @@
                                     <span class="img-panner">Vé của bạn</span>
                                 </div>
                                 <div class="border-padding form">
-                                    <form action="#">
+                                    <form action="/checkout" method="get">
+                                        @csrf
                                         <div class="row padding-icon">
                                             <div class="col-lg-12">
                                                 <select class="js-example-basic-single" name="state">
@@ -147,13 +148,13 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-lg-5">
-                                                    <input type="text" class="form-control" id="soluong" name="soluong" placeholder="Số lượng vé" required>
+                                                    <input type="text" class="form-control" id="soluong" name="soluong" placeholder="Số lượng vé" required style="max-width: 135px;">
                                                 
                                             </div>
                                             <div class="col-lg-7" style="position:relative;">
                                                     
                                                 <div id="datepicker" class=" date inputdate" data-date-format="mm-dd-yyyy">
-                                                    <input class="form-control" type="text" readonly placeholder="Ngày sử dụng" required />
+                                                    <input name="date" class="form-control" type="text" readonly placeholder="Ngày sử dụng" required style="margin-left:-15px;"/>
                                                     <span class="input-group-addon icondate"><img src="{{Storage::disk('public')->url('calendar.png') }}" alt=""></span>
                                                 </div>
                                             </div>

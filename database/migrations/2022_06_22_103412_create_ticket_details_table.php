@@ -18,7 +18,7 @@ class CreateTicketDetailsTable extends Migration
             $table->integer('ticket_id')->unsigned();
             $table->integer('event_id')->unsigned();
             $table->string('qty_ticket');
-            $table->date('use_day');
+            $table->string('use_day');
 
 
             $table->timestamps();

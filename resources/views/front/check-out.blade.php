@@ -79,7 +79,10 @@
                             <div class="nguoi-toctim">
                                 <img src="{{Storage::disk('public')->url('1nguoi-tocvang.png') }}" alt="">
                             </div>
-                            <form action="#" style="display:flex;">
+                            <form action="/checkout" style="display:flex;" method="post">
+                                @csrf
+                                <input type="text" class="form-control" id="id" name="id" value="{{$id}}" required style="display:none;">
+
                                 <div class="col-lg-7 padding">
                                     <div class="panner-ve">
                                         <span class="img-panner">VÉ CỔNG - VÉ GIA ĐÌNH</span>
@@ -88,36 +91,36 @@
                                             <div class="row" style="margin-top: 15px;">
                                                 <div class="col-lg-4" style="margin-right:28px;">
                                                     <label for="money">Số tiền thanh toán</label>
-                                                    <input type="text" class="form-control" id="money" name="money" placeholder="" required>
+                                                    <input type="text" class="form-control" id="money" name="money" value="{{$money}}" required>
                                                 </div>
                                                 <div class="col-lg-3" style="margin-right:28px;">
                                                     <label for="qty">Số lượng vé</label>
                                                     <div class="" style="display:flex;">
-                                                        <input type="text" class="form-control" id="qty" name="qty" placeholder="" required>
+                                                        <input type="text" class="form-control" id="qty" name="qty" value="{{$soluong}}" required >
                                                         <span class="ve">vé</span>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <label for="date">Ngày sử dụng</label>
-                                                    <input type="text" class="form-control" id="date" name="date" placeholder="" required>
+                                                    <input type="text" class="form-control" id="date" name="date" value="{{$date}}" required >
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-lg-8">
-                                                    <label for="namecontact">Thông tin liên hệ</label>
-                                                    <input type="text" class="form-control" id="namecontact" name="namecontact" placeholder="" required>
+                                                    <label for="name">Thông tin liên hệ</label>
+                                                    <input type="text" class="form-control" id="name" name="nam" value="{{$name}}"  >
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-lg-5">
                                                     <label for="phone">Điện thoại</label>
-                                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="" required>
+                                                    <input type="text" class="form-control" id="phone" name="phone" value="{{$phone}}" required >
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-lg-8">
                                                     <label for="email">Email</label>
-                                                    <input type="email" class="form-control" id="email" name="email" placeholder="" required>
+                                                    <input type="email" class="form-control" id="email" name="email" value="{{$email}}" required >
                                                 </div>
                                             </div>
                                     </div>
@@ -134,14 +137,14 @@
                                             <div class="row" style="margin-top:15px;">
                                                 <div class="col-lg-12">
                                                     <label for="numbercard">Số thẻ</label>
-                                                    <input type="text" class="form-control" id="numbercard" name="numbercard" placeholder="Số thẻ" required>
+                                                    <input type="text" class="form-control" id="numbercard" name="numbercard" placeholder="Số thẻ" >
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                 <label for="name">Họ tên chủ thẻ</label>
 
-                                                    <input type="text" class="form-control" id="name" name="name" placeholder="Họ tên chủ thẻ" required>
+                                                    <input type="text" class="form-control" id="name" name="name" placeholder="Họ tên chủ thẻ" >
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -149,7 +152,7 @@
                                                     
                                                     <div id="datepicker" class=" date inputdate" data-date-format="mm-dd-yyyy">
                                                         <label for="date">Ngày hết hạn</label>
-                                                        <input class="form-control" type="text" id="date" readonly placeholder="Ngày sử dụng" required />
+                                                        <input class="form-control" type="text" id="date" readonly placeholder="Ngày sử dụng"  />
                                                         <span class="input-group-addon icondate"><img src="{{Storage::disk('public')->url('calendar.png') }}" alt=""></span>
                                                     </div>
                                                 </div>
@@ -157,14 +160,15 @@
                                             <div class="row">
                                                 <div class="col-lg-12">
                                                 <label for="name">CVV/CVC</label>
-                                                    <input type="password" class="form-control cvv" id="cvv" name="cvv" placeholder="CVV/CVC" required>
+                                                    <input type="password" class="form-control cvv" id="cvv" name="cvv" placeholder="CVV/CVC" >
                                                 </div>
                                             </div>
-                                            <div class="row button">
-                                                <div class="col-lg-12">
-                                                    <button type="submit">Thanh toán</button>
-                                                </div>
-                                            </div>
+                                            
+                                    </div>
+                                </div>
+                                <div class="row button-thanhtoan">
+                                    <div class="col-lg-12">
+                                        <button type="submit" class="submit-thanhtoan">Thanh toán</button>
                                     </div>
                                 </div>
                             </form>

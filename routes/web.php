@@ -23,11 +23,12 @@ Route::get('/event/{id}',[App\Http\Controllers\EventController::class,'detail'])
 Route::get('/contact',[App\Http\Controllers\ContactController::class,'index'])->name('contact');
 Route::post('/contact',[App\Http\Controllers\ContactController::class,'sendmail'])->name('sendmail');
 
+Route::get('/checkout',[App\Http\Controllers\CheckoutController::class,'index'])->name('checkout');
+Route::post('/checkout',[App\Http\Controllers\CheckoutController::class,'checkout']);
 
-Route::get('/checkout', function () {
-    return view('front.check-out');
-});
-Route::get('/checkout-result', function () {
-    return view('front.checkout-result');
-});
+
+
+
+Route::get('checkout/vnPayCheck', [App\Http\Controllers\CheckoutController::class, 'vnPayCheck']);
+Route::get('/checkout-result', [App\Http\Controllers\CheckoutController::class, 'result']);
 

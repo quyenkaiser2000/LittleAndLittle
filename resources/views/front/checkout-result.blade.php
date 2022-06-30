@@ -85,77 +85,21 @@
                                     <div class="padding">
                                         <div class="border-padding">
                                             <div class="autoplay">
-                                                <div class="card" style="width: 330px;">
-                                                    <img src="{{Storage::disk('public')->url('QR.png') }}" class="card-img-top" alt="...">
-                                                    <div class="card-body">
-                                                        <h5 class="card-code">ALT20210501</h5>
-                                                        <p class="card-title">Vé cổng</p>
-                                                        <hr>
+                                                    <div class="card" style="width: 330px;">
+                                                        {{ $ticket }}
+                                                        <div class="card-body">
+                                                            <h5 class="card-code">ALT20210501</h5>
+                                                            <p class="card-title">Vé cổng</p>
+                                                            <hr>
 
-                                                        <p class="card-text-date">Ngày sử dụng: 01/06/2021</p>
+                                                            <p class="card-text-date">Ngày sử dụng: 01/06/2021</p>
 
-                                                        <img src="{{Storage::disk('public')->url('check.png') }}" alt=""  class="img-check">
+                                                            <img src="{{Storage::disk('public')->url('check.png') }}" alt=""  class="img-check">
 
 
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="card" style="width: 330px;">
-                                                    <img src="{{Storage::disk('public')->url('QR.png') }}" class="card-img-top" alt="...">
-                                                    <div class="card-body">
-                                                        <h5 class="card-code">ALT20210501</h5>
-                                                        <p class="card-title">Vé cổng</p>
-                                                        <hr>
-
-                                                        <p class="card-text-date">Ngày sử dụng: 01/06/2021</p>
-                                                        <img src="{{Storage::disk('public')->url('check.png') }}" alt=""  class="img-check">
-
-
-
-                                                    </div>
-                                                </div>
-                                                <div class="card" style="width: 330px;">
-                                                    <img src="{{Storage::disk('public')->url('QR.png') }}" class="card-img-top" alt="...">
-                                                    <div class="card-body">
-                                                        <h5 class="card-code">ALT20210501</h5>
-                                                        <p class="card-title">Vé cổng</p>
-                                                        <p class="card-text-date">Ngày sử dụng: 01/06/2021</p>
-                                                        <hr>
-
-                                                        <img src="{{Storage::disk('public')->url('check.png') }}" alt="" class="img-check">
-
-
-                                                        
-
-                                                    </div>
-                                                </div>
-                                                <div class="card" style="width: 330px;">
-                                                    <img src="{{Storage::disk('public')->url('QR.png') }}" class="card-img-top" alt="...">
-                                                    <div class="card-body">
-                                                        <h5 class="card-code">ALT20210501</h5>
-                                                        <p class="card-title">Vé cổng</p>
-                                                        <hr>
-                                                        <p class="card-text-date">Ngày sử dụng: 01/06/2021</p>
-
-                                                        <img src="{{Storage::disk('public')->url('check.png') }}" alt="" class="img-check">
-
-
-
-                                                    </div>
-                                                </div>
-                                                <div class="card" style="width: 330px;">
-                                                    <img src="{{Storage::disk('public')->url('QR.png') }}" class="card-img-top" alt="...">
-                                                    <div class="card-body">
-                                                        <h5 class="card-code">ALT20210501</h5>
-                                                        <p class="card-title">Vé cổng</p>
-                                                        <hr>
-
-                                                        <p class="card-text-date">Ngày sử dụng: 01/06/2021</p>
-
-                                                        <img src="{{Storage::disk('public')->url('check.png') }}" alt="" class="img-check">
-
-
-                                                    </div>
-                                                </div>
+                                                
                                             </div>
                                             <div class="qty-ve">
                                                 <span class="text-ve">Số lượng : 12 vé</span>
